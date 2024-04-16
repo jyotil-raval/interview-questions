@@ -1,6 +1,6 @@
 # Intermediate Level:
 
-## Intermediate 1> Describe the differences between useState() and useReducer() hooks.
+## 1> Describe the differences between useState() and useReducer() hooks.
 
 > _Purpose_: Both useState() and useReducer() are React hooks used for managing state in functional components, but they have different purposes and usage patterns.
 
@@ -31,7 +31,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
 
 > _Conclusion_: Understanding the differences between useState() and useReducer() helps developers choose the appropriate state management approach based on the complexity and requirements of their React components.
 
-## Intermediate 2> How do you optimize performance in React applications?
+## 2> How do you optimize performance in React applications?
 
 > _Purpose_: Performance optimization in React aims to improve the rendering speed and overall responsiveness of applications, leading to a better user experience.
 
@@ -60,7 +60,7 @@ useEffect(() => {
 
 > _Conclusion_: Prioritizing performance optimization in React applications is essential for delivering high-quality and efficient software solutions that meet users' expectations and requirements.
 
-## Intermediate 3> Explain the concept of React Router and how it is used for routing in React applications.
+## 3> Explain the concept of React Router and how it is used for routing in React applications.
 
 > _Purpose_: React Router is a popular library used for handling routing in React applications, allowing developers to navigate between different components/pages based on the URL.
 
@@ -89,7 +89,7 @@ const App = () => {
 
 > _Conclusion_: Leveraging React Router simplifies the implementation of routing in React applications, making it easier for developers to create single-page applications with multiple views and navigation capabilities.
 
-## Intermediate 4> What are higher-order components (HOCs) in React? Provide an example.
+## 4> What are higher-order components (HOCs) in React? Provide an example.
 
 > _Purpose_: Higher-order components (HOCs) are a pattern in React for reusing component logic by wrapping components with other components. HOCs enhance component composition and allow cross-cutting concerns like data fetching, authentication, or styling to be applied to multiple components.
 
@@ -121,7 +121,7 @@ const ProfilePage = withAuth(ProfileComponent);
 
 > _Conclusion_: Understanding and leveraging higher-order components in React development can lead to cleaner, more modular, and reusable codebases, improving maintainability and scalability.
 
-## Intermediate 5> How do you manage the global state in React without using Redux?
+## 5> How do you manage the global state in React without using Redux?
 
 > _Purpose_: Managing global state in React without Redux involves using alternative state management solutions like Context API, third-party libraries such as MobX or Recoil, or custom solutions based on React hooks.
 
@@ -165,7 +165,7 @@ store.setGlobalState(newState);
 
 > _Conclusion_: Understanding various alternatives to Redux for global state management in React enables developers to select the most suitable solution for their specific use case, balancing simplicity, performance, and scalability.
 
-## Intermediate 6> What is the significance of the shouldComponentUpdate() method in React?
+## 6> What is the significance of the shouldComponentUpdate() method in React?
 
 > _Purpose_: The shouldComponentUpdate() method in React allows developers to optimize performance by controlling when a component should re-render. It determines whether the component should proceed with the rendering process or not based on changes in props or state.
 
@@ -193,7 +193,7 @@ class MyComponent extends React.Component {
 
 > _Conclusion_: Understanding and utilizing the shouldComponentUpdate() method appropriately empowers developers to optimize rendering performance in React applications, ensuring efficient use of resources and better user interactions.
 
-## Intermediate 7> How do you handle authentication and authorization in React applications?
+## 7> How do you handle authentication and authorization in React applications?
 
 > _Purpose_: Handling authentication and authorization in React applications ensures secure access to resources and features based on user identity and permissions.
 
@@ -231,7 +231,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => <Route {...rest} ren
 
 > _Conclusion_: Integrating authentication and authorization features into React applications is crucial for maintaining data security and user privacy, enhancing the overall trustworthiness and reliability of the software solution.
 
-## Intermediate 8> Explain the concept of lazy loading in React and its benefits.
+## 8> Explain the concept of lazy loading in React and its benefits.
 
 > _Purpose_: Lazy loading in React refers to the technique of dynamically loading components or assets only when they are needed, typically during runtime, instead of loading them all upfront during the initial page load.
 
@@ -254,7 +254,7 @@ const MyComponent = () => (
 
 > _Conclusion_: Incorporating lazy loading into React applications is an effective strategy for optimizing performance, reducing initial load times, and enhancing the overall responsiveness of the user interface, particularly in scenarios with large component trees or multiple routes.
 
-## Intermediate 9> What are controlled and uncontrolled components in React?
+## 9> What are controlled and uncontrolled components in React?
 
 > _Purpose_: In React, controlled and uncontrolled components refer to two different approaches for managing form inputs and their corresponding state within React components.
 
@@ -320,7 +320,7 @@ const UncontrolledForm = () => {
 
 > _Conclusion_: Understanding the differences between controlled and uncontrolled components helps developers choose the appropriate approach based on the requirements and complexity of their forms, balancing control, simplicity, and performance.
 
-## Intermediate 10> How do you handle side effects in React using hooks?
+## 10> How do you handle side effects in React using hooks?
 
 > _Purpose_: Side effects in React refer to operations that are not directly related to rendering, such as data fetching, DOM manipulation, or subscriptions. React hooks provide a clean and concise way to handle side effects in functional components.
 
@@ -359,7 +359,7 @@ const DataFetchingComponent = () => {
 
 > _Conclusion_: Leveraging React hooks like useEffect() for handling side effects allows developers to write more concise and efficient code, separating concerns and enhancing the scalability and flexibility of React components.
 
-## Intermediate 11> Describe the purpose of error boundaries in React.
+## 11> Describe the purpose of error boundaries in React.
 
 > _Purpose_: Error boundaries in React are components that catch JavaScript errors anywhere in their child component tree during rendering, in lifecycle methods, and in constructors of the whole tree below them.
 
@@ -399,7 +399,7 @@ class ErrorBoundary extends React.Component {
 
 > _Conclusion_: Incorporating error boundaries into React applications enhances error handling and improves user experience by preventing crashes and providing informative error messages or fallback UIs, ultimately leading to more stable and resilient software solutions.
 
-## Intermediate 12> What are React Portals and why are they used?
+## 12> What are React Portals and why are they used?
 
 > _Purpose_: React Portals provide a way to render children into a DOM node that exists outside of the parent component's DOM hierarchy. They are used to render content into a different part of the DOM, such as a modal or a tooltip, while maintaining the component tree structure and event bubbling semantics.
 
@@ -443,7 +443,7 @@ const App = () => {
 
 > _Conclusion_: Understanding and utilizing React Portals provides developers with a powerful tool for building flexible and maintainable UI components that require rendering into a different part of the DOM, enhancing the overall user experience and design possibilities in React applications.
 
-## Intermediate 13> How do you perform server-side rendering (SSR) with React?
+## 13> How do you perform server-side rendering (SSR) with React?
 
 > _Purpose_: Server-side rendering (SSR) with React involves rendering React components on the server and sending the generated HTML to the client, improving initial page load performance and search engine optimization (SEO).
 
@@ -485,7 +485,7 @@ server.listen(3000, () => {
 
 > _Conclusion_: Implementing server-side rendering with React requires configuring a Node.js server to render React components on the server side. By utilizing SSR, developers can enhance the performance and SEO of their React applications, providing a better user experience and improved search engine visibility.
 
-## Intermediate 14> Explain the concept of code splitting in React.
+## 14> Explain the concept of code splitting in React.
 
 > _Purpose_: Code splitting in React is a technique used to improve performance by splitting the JavaScript bundle into smaller chunks, loading only the necessary code for the current view or feature, and deferring the loading of non-essential code until it's needed.
 
@@ -509,7 +509,7 @@ const App = () => (
 
 > _Conclusion_: Incorporating code splitting into React applications is an effective strategy for optimizing performance, reducing initial load times, and enhancing the overall responsiveness of the user interface, particularly in scenarios with large component trees or multiple routes.
 
-## Intermediate 15> How do you handle routing with parameters in React Router?
+## 15> How do you handle routing with parameters in React Router?
 
 > _Purpose_: Handling routing with parameters in React Router allows developers to create dynamic routes that can accept parameters (URL segments) as inputs, enabling customization and dynamic content rendering based on those parameters.
 
@@ -539,7 +539,7 @@ const App = () => (
 
 > _Conclusion_: Understanding and implementing routing with parameters in React Router enables developers to create dynamic and customizable user experiences, where different content or functionality is rendered based on the values passed through URL parameters.
 
-## Intermediate 16> What is the role of context API in React? Provide a scenario where you would use it.
+## 16> What is the role of context API in React? Provide a scenario where you would use it.
 
 > _Purpose_: The Context API in React provides a way to share data between components without having to explicitly pass props through every level of the component tree. It simplifies state management and makes certain types of data, such as theme preferences or authentication status, accessible to all components in a React application.
 
@@ -572,7 +572,7 @@ const ThemedButton = () => <ThemeContext.Consumer>{(theme) => <button style={{ b
 
 > _Conclusion_: Context API in React serves as a powerful tool for managing global or shared state across components, offering a cleaner and more efficient alternative to prop drilling. It is particularly useful in scenarios where multiple components need access to the same data, such as theming, localization, or user authentication.
 
-## Intermediate 17> How do you test React components?
+## 17> How do you test React components?
 
 > _Purpose_: Testing React components ensures that they behave as expected, maintain functionality across changes, and prevent regressions. Various testing techniques and libraries are available for testing React components, including unit tests, integration tests, and end-to-end tests.
 
@@ -605,7 +605,7 @@ test('button click event handler is called', () => {
 
 > _Conclusion_: Implementing testing for React components using appropriate testing libraries and techniques is essential for maintaining code quality, preventing regressions, and ensuring a smooth user experience in React applications.
 
-## Intermediate 18> Explain the concept of memoization in React and its benefits.
+## 18> Explain the concept of memoization in React and its benefits.
 
 > _Purpose_: Memoization in React is a performance optimization technique used to cache the results of expensive function calls and avoid redundant computations. It helps improve the performance of React components by storing the results of function calls and returning the cached result when the same inputs occur again.
 
@@ -630,7 +630,7 @@ const ExpensiveComponent = ({ data }) => {
 
 > _Conclusion_: Incorporating memoization techniques like useMemo() in React components helps optimize performance by reducing unnecessary computations and re-renders. It is particularly useful for optimizing components that perform complex calculations or data processing, improving overall application responsiveness and user satisfaction.
 
-## Intermediate 19> What are React fragments and when would you use them?
+## 19> What are React fragments and when would you use them?
 
 > _Purpose_: React fragments provide a way to group multiple JSX elements without introducing unnecessary wrapper elements in the DOM. They are useful when you need to return multiple elements from a component's render method but don't want to add extra DOM nodes to the output.
 
@@ -653,7 +653,7 @@ const MyComponent = () => (
 
 > _Conclusion_: React fragments are a lightweight and convenient way to group multiple JSX elements without introducing extra DOM nodes. They are particularly useful when returning multiple elements or rendering lists from React components, enhancing code organization and readability without impacting the rendered output.
 
-## Intermediate 20> How do you handle AJAX requests in React applications?
+## 20> How do you handle AJAX requests in React applications?
 
 > _Purpose_: Handling AJAX requests in React applications involves fetching data from remote servers asynchronously and updating the UI based on the received data. AJAX requests are commonly used to interact with APIs, retrieve data, and update the application state.
 
@@ -701,7 +701,7 @@ const MyComponent = () => {
 
 > _Conclusion_: Implementing AJAX request handling in React applications allows developers to interact with external APIs, retrieve data asynchronously, and update the UI accordingly. It enables the creation of dynamic and responsive web applications that provide seamless user experiences.
 
-## Intermediate 21> Explain the JWT token.
+## 21> Explain the JWT token.
 
 > _Purpose_: JSON Web Tokens (JWT) are a compact and self-contained way of securely transmitting information between parties as a JSON object. They are commonly used for authentication and authorization in web applications.
 
@@ -729,7 +729,7 @@ Signature: HMACSHA256(
 
 > _Conclusion_: Understanding JWTs and their role in authentication and authorization is essential for building secure web applications. By leveraging JWTs, developers can implement token-based authentication mechanisms that are efficient, scalable, and interoperable across different platforms and technologies.
 
-## Intermediate 22> Explain Webpack and its configuration.
+## 22> Explain Webpack and its configuration.
 
 > _Purpose_: Webpack is a popular module bundler for JavaScript applications, commonly used in React projects. It bundles various modules and assets, such as JavaScript files, CSS files, and images, into a single bundle that can be served to the browser. Webpack helps manage dependencies, optimize code, and improve performance.
 
@@ -770,7 +770,7 @@ module.exports = {
 
 > _Conclusion_: Understanding Webpack and its configuration is crucial for modern web development, especially in React projects where it is commonly used for bundling assets. With proper configuration, Webpack can greatly simplify the development workflow and enhance the performance and scalability of React applications.
 
-## Intermediate 23> How many packages you have used for unit testing, which are those, and why?
+## 23> How many packages you have used for unit testing, which are those, and why?
 
 > _Purpose_: Unit testing is essential for ensuring the correctness and reliability of individual units of code in a software application. Various testing libraries and frameworks are available for unit testing React components, each with its advantages and use cases.
 
@@ -790,7 +790,7 @@ npm install --save-dev enzyme enzyme-adapter-react-16
 
 > _Conclusion_: Choosing the right unit testing package depends on factors such as project requirements, testing philosophy, and personal preferences. By leveraging the capabilities of testing libraries like Jest, React Testing Library, or Enzyme, developers can ensure the quality and reliability of their React applications through comprehensive unit testing.
 
-## Intermediate 24> Have you worked on accessibility in HTML, have you used the aria, tell some aria names that you have used?
+## 24> Have you worked on accessibility in HTML, have you used the aria, tell some aria names that you have used?
 
 > _Purpose_: Accessibility (a11y) in HTML ensures that web content is accessible to people with disabilities, including those who rely on assistive technologies such as screen readers. ARIA (Accessible Rich Internet Applications) attributes enhance the accessibility of web content by providing additional semantics and context to assistive technologies.
 
@@ -814,7 +814,7 @@ npm install --save-dev enzyme enzyme-adapter-react-16
 
 > _Conclusion_: Incorporating ARIA attributes into HTML elements is essential for creating accessible web content that accommodates a diverse range of users, including those with disabilities. By following accessibility best practices and utilizing ARIA attributes effectively, developers can ensure that their web applications are inclusive and usable for all users.
 
-## Intermediate 25> What is the difference between fetch and Axios?
+## 25> What is the difference between fetch and Axios?
 
 > _Purpose_: Both fetch and Axios are JavaScript libraries used for making HTTP requests in web applications. Understanding the differences between them helps developers choose the right tool for their specific use cases.
 
@@ -840,7 +840,7 @@ axios
 
 > _Conclusion_: When choosing between fetch and Axios, developers should consider factors such as ease of use, feature requirements, and compatibility with existing code. Axios is often preferred for its additional features and ease of use, especially in complex applications where more advanced HTTP request handling is required.
 
-## Intermediate 26> Have you ever done any project setup/configuration from scratch, what things need to be kept in mind when setting up the project?
+## 26> Have you ever done any project setup/configuration from scratch, what things need to be kept in mind when setting up the project?
 
 > _Purpose_: Setting up a project from scratch involves configuring development tools, libraries, dependencies, and project structure to create a solid foundation for development. Keeping important considerations in mind ensures that the project setup is efficient, maintainable, and scalable.
 
@@ -861,7 +861,7 @@ axios
 
 > _Conclusion_: When setting up a project from scratch, it's essential to consider various factors and make informed decisions based on project requirements, team expertise, and industry best practices. By carefully planning and configuring project setup, developers can create a solid foundation for building scalable, maintainable, and high-quality software solutions.
 
-## Intermediate 27> What is CORS?
+## 27> What is CORS?
 
 > _Purpose_: Cross-Origin Resource Sharing (CORS) is a security mechanism implemented by web browsers to control access to resources (e.g., APIs) on a different origin (domain, protocol, or port) from the requesting web page. It is designed to prevent unauthorized cross-origin requests that could lead to security vulnerabilities such as cross-site scripting (XSS) or data theft.
 
@@ -879,7 +879,7 @@ Access-Control-Allow-Headers: Content-Type, Authorization
 
 > _Conclusion_: Understanding CORS is essential for web developers, especially when building web applications that interact with APIs hosted on different domains. By configuring CORS policies appropriately on server-side endpoints, developers can ensure secure and controlled access to resources, maintaining the integrity and security of their web applications.
 
-## Intermediate 28> Explain CSRF.
+## 28> Explain CSRF.
 
 > _Purpose_: Cross-Site Request Forgery (CSRF) is a type of web security vulnerability that allows an attacker to trick a user into unintentionally performing actions on a web application in which they are authenticated. CSRF attacks exploit the trust that a web application has in a user's browser by forging requests that appear to be legitimate.
 
@@ -906,7 +906,7 @@ Access-Control-Allow-Headers: Content-Type, Authorization
 
 > _Conclusion_: Protecting against CSRF attacks requires implementing measures such as using anti-CSRF tokens, checking the origin or referrer headers of incoming requests, and enforcing strict access controls on sensitive operations. By mitigating CSRF vulnerabilities, web developers can safeguard the integrity and security of their applications and protect users from unauthorized actions.
 
-## Intermediate 29> What is the difference between types and interfaces?
+## 29> What is the difference between types and interfaces?
 
 > _Purpose_: In TypeScript, both types and interfaces are used to define shapes or structures of data. Understanding the differences between them helps developers choose the appropriate tool for defining custom data types in their code.
 
@@ -935,7 +935,7 @@ type Status = 'active' | 'inactive';
 
 > _Conclusion_: Choosing between types and interfaces in TypeScript depends on the specific requirements and use cases of the project. Interfaces are preferred when defining object shapes and contracts, while types are more versatile and can be used to represent a broader range of data structures and patterns. By leveraging both types and interfaces effectively, developers can create robust and maintainable TypeScript codebases.
 
-## Intermediate 30> What is a preprocessor, have you used any preprocessor, give some CSS preprocessor names. What is the benefit of it?
+## 30> What is a preprocessor, have you used any preprocessor, give some CSS preprocessor names. What is the benefit of it?
 
 > _Purpose_: A preprocessor is a tool or software that extends the capabilities of CSS by introducing features such as variables, nesting, mixins, and functions. Preprocessors help streamline CSS development, improve code organization, and enhance maintainability by allowing developers to write more efficient and maintainable CSS code.
 
@@ -959,7 +959,7 @@ type Status = 'active' | 'inactive';
 
 > _Conclusion_: Incorporating a CSS preprocessor like Sass, Less, or Stylus into the development workflow offers numerous benefits, including improved code organization, enhanced maintainability, and increased developer efficiency. By adopting a preprocessor, developers can write more expressive and modular CSS code, leading to better design consistency and scalability in web projects.
 
-## Intermediate 31> What development tools have you used to enhance the quality of your code?
+## 31> What development tools have you used to enhance the quality of your code?
 
 > _Purpose_: Development tools play a crucial role in enhancing the quality of code by providing features for code analysis, linting, formatting, testing, and debugging. Using appropriate development tools helps developers identify and fix issues, maintain code consistency, and ensure high-quality code standards.
 
@@ -977,7 +977,7 @@ type Status = 'active' | 'inactive';
 
 > _Conclusion_: Using a combination of development tools tailored to the project's requirements and technology stack is essential for enhancing code quality, improving developer productivity, and delivering reliable and maintainable software solutions. By integrating these tools into the development workflow, developers can foster collaboration, enforce coding standards, and achieve higher code quality and reliability.
 
-## Intermediate 32> Name the hooks that are used to add some rules before committing the code?
+## 32> Name the hooks that are used to add some rules before committing the code?
 
 > _Purpose_: Git hooks are scripts that run automatically before or after certain Git events, such as committing code changes, pushing commits to a remote repository, or merging branches. These hooks allow developers to enforce rules, perform actions, or execute custom scripts to maintain code quality and project standards.
 
