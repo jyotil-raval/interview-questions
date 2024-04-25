@@ -1,6 +1,6 @@
-# Intermediate Level:
+# [Intermediate Level](/ReactJS/README.MD#intermediate-level)
 
-## 1> Describe the differences between useState() and useReducer() hooks.
+## 1> Describe the differences between useState() and useReducer() hooks
 
 > _Purpose_: Both useState() and useReducer() are React hooks used for managing state in functional components, but they have different purposes and usage patterns.
 
@@ -60,7 +60,7 @@ useEffect(() => {
 
 > _Conclusion_: Prioritizing performance optimization in React applications is essential for delivering high-quality and efficient software solutions that meet users' expectations and requirements.
 
-## 3> Explain the concept of React Router and how it is used for routing in React applications.
+## 3> Explain the concept of React Router and how it is used for routing in React applications
 
 > _Purpose_: React Router is a popular library used for handling routing in React applications, allowing developers to navigate between different components/pages based on the URL.
 
@@ -89,7 +89,7 @@ const App = () => {
 
 > _Conclusion_: Leveraging React Router simplifies the implementation of routing in React applications, making it easier for developers to create single-page applications with multiple views and navigation capabilities.
 
-## 4> What are higher-order components (HOCs) in React? Provide an example.
+## 4> What are higher-order components (HOCs) in React? Provide an example
 
 > _Purpose_: Higher-order components (HOCs) are a pattern in React for reusing component logic by wrapping components with other components. HOCs enhance component composition and allow cross-cutting concerns like data fetching, authentication, or styling to be applied to multiple components.
 
@@ -231,7 +231,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => <Route {...rest} ren
 
 > _Conclusion_: Integrating authentication and authorization features into React applications is crucial for maintaining data security and user privacy, enhancing the overall trustworthiness and reliability of the software solution.
 
-## 8> Explain the concept of lazy loading in React and its benefits.
+## 8> Explain the concept of lazy loading in React and its benefits
 
 > _Purpose_: Lazy loading in React refers to the technique of dynamically loading components or assets only when they are needed, typically during runtime, instead of loading them all upfront during the initial page load.
 
@@ -359,7 +359,7 @@ const DataFetchingComponent = () => {
 
 > _Conclusion_: Leveraging React hooks like useEffect() for handling side effects allows developers to write more concise and efficient code, separating concerns and enhancing the scalability and flexibility of React components.
 
-## 11> Describe the purpose of error boundaries in React.
+## 11> Describe the purpose of error boundaries in React
 
 > _Purpose_: Error boundaries in React are components that catch JavaScript errors anywhere in their child component tree during rendering, in lifecycle methods, and in constructors of the whole tree below them.
 
@@ -485,7 +485,7 @@ server.listen(3000, () => {
 
 > _Conclusion_: Implementing server-side rendering with React requires configuring a Node.js server to render React components on the server side. By utilizing SSR, developers can enhance the performance and SEO of their React applications, providing a better user experience and improved search engine visibility.
 
-## 14> Explain the concept of code splitting in React.
+## 14> Explain the concept of code splitting in React
 
 > _Purpose_: Code splitting in React is a technique used to improve performance by splitting the JavaScript bundle into smaller chunks, loading only the necessary code for the current view or feature, and deferring the loading of non-essential code until it's needed.
 
@@ -539,7 +539,7 @@ const App = () => (
 
 > _Conclusion_: Understanding and implementing routing with parameters in React Router enables developers to create dynamic and customizable user experiences, where different content or functionality is rendered based on the values passed through URL parameters.
 
-## 16> What is the role of context API in React? Provide a scenario where you would use it.
+## 16> What is the role of context API in React? Provide a scenario where you would use it
 
 > _Purpose_: The Context API in React provides a way to share data between components without having to explicitly pass props through every level of the component tree. It simplifies state management and makes certain types of data, such as theme preferences or authentication status, accessible to all components in a React application.
 
@@ -605,7 +605,7 @@ test('button click event handler is called', () => {
 
 > _Conclusion_: Implementing testing for React components using appropriate testing libraries and techniques is essential for maintaining code quality, preventing regressions, and ensuring a smooth user experience in React applications.
 
-## 18> Explain the concept of memoization in React and its benefits.
+## 18> Explain the concept of memoization in React and its benefits
 
 > _Purpose_: Memoization in React is a performance optimization technique used to cache the results of expensive function calls and avoid redundant computations. It helps improve the performance of React components by storing the results of function calls and returning the cached result when the same inputs occur again.
 
@@ -701,7 +701,7 @@ const MyComponent = () => {
 
 > _Conclusion_: Implementing AJAX request handling in React applications allows developers to interact with external APIs, retrieve data asynchronously, and update the UI accordingly. It enables the creation of dynamic and responsive web applications that provide seamless user experiences.
 
-## 21> Explain the JWT token.
+## 21> Explain the JWT token
 
 > _Purpose_: JSON Web Tokens (JWT) are a compact and self-contained way of securely transmitting information between parties as a JSON object. They are commonly used for authentication and authorization in web applications.
 
@@ -729,7 +729,7 @@ Signature: HMACSHA256(
 
 > _Conclusion_: Understanding JWTs and their role in authentication and authorization is essential for building secure web applications. By leveraging JWTs, developers can implement token-based authentication mechanisms that are efficient, scalable, and interoperable across different platforms and technologies.
 
-## 22> Explain Webpack and its configuration.
+## 22> Explain Webpack and its configuration
 
 > _Purpose_: Webpack is a popular module bundler for JavaScript applications, commonly used in React projects. It bundles various modules and assets, such as JavaScript files, CSS files, and images, into a single bundle that can be served to the browser. Webpack helps manage dependencies, optimize code, and improve performance.
 
@@ -879,7 +879,7 @@ Access-Control-Allow-Headers: Content-Type, Authorization
 
 > _Conclusion_: Understanding CORS is essential for web developers, especially when building web applications that interact with APIs hosted on different domains. By configuring CORS policies appropriately on server-side endpoints, developers can ensure secure and controlled access to resources, maintaining the integrity and security of their web applications.
 
-## 28> Explain CSRF.
+## 28> Explain CSRF
 
 > _Purpose_: Cross-Site Request Forgery (CSRF) is a type of web security vulnerability that allows an attacker to trick a user into unintentionally performing actions on a web application in which they are authenticated. CSRF attacks exploit the trust that a web application has in a user's browser by forging requests that appear to be legitimate.
 
@@ -965,13 +965,13 @@ type Status = 'active' | 'inactive';
 
 > _Process_: There are various development tools available for enhancing code quality in different stages of the development process. Some commonly used tools include:
 >
-> 1.  **Code Editors**: Editors like Visual Studio Code, Atom, or Sublime Text provide features such as syntax highlighting, code completion, and integrated terminal for efficient code writing and editing.
-> 2.  **Linters**: Linters like ESLint (for JavaScript) and Stylelint (for CSS) analyze code for potential errors, stylistic inconsistencies, and code quality issues, helping enforce coding standards and best practices.
-> 3.  **Formatters**: Code formatters like Prettier automatically format code according to predefined rules, ensuring consistent code style across the project and reducing manual formatting efforts.
-> 4.  **Version Control Systems**: Version control systems like Git enable collaborative development, code versioning, and tracking changes, facilitating team collaboration and code management.
-> 5.  **Testing Frameworks**: Testing frameworks like Jest (for JavaScript) and Pytest (for Python) provide tools for writing and running unit tests, integration tests, and end-to-end tests to ensure code functionality and reliability.
-> 6.  **Debuggers**: Debugging tools like Chrome DevTools (for JavaScript) and PyCharm Debugger (for Python) help identify and troubleshoot issues in code by providing debugging capabilities, breakpoints, and inspection tools.
-> 7.  **Continuous Integration/Continuous Deployment (CI/CD) Tools**: CI/CD tools like Jenkins, Travis CI, or GitHub Actions automate build, test, and deployment processes, ensuring code quality and consistency throughout the development lifecycle.
+> 1. **Code Editors**: Editors like Visual Studio Code, Atom, or Sublime Text provide features such as syntax highlighting, code completion, and integrated terminal for efficient code writing and editing.
+> 2. **Linters**: Linters like ESLint (for JavaScript) and Stylelint (for CSS) analyze code for potential errors, stylistic inconsistencies, and code quality issues, helping enforce coding standards and best practices.
+> 3. **Formatters**: Code formatters like Prettier automatically format code according to predefined rules, ensuring consistent code style across the project and reducing manual formatting efforts.
+> 4. **Version Control Systems**: Version control systems like Git enable collaborative development, code versioning, and tracking changes, facilitating team collaboration and code management.
+> 5. **Testing Frameworks**: Testing frameworks like Jest (for JavaScript) and Pytest (for Python) provide tools for writing and running unit tests, integration tests, and end-to-end tests to ensure code functionality and reliability.
+> 6. **Debuggers**: Debugging tools like Chrome DevTools (for JavaScript) and PyCharm Debugger (for Python) help identify and troubleshoot issues in code by providing debugging capabilities, breakpoints, and inspection tools.
+> 7. **Continuous Integration/Continuous Deployment (CI/CD) Tools**: CI/CD tools like Jenkins, Travis CI, or GitHub Actions automate build, test, and deployment processes, ensuring code quality and consistency throughout the development lifecycle.
 
 > _Result_: By leveraging development tools effectively, developers can streamline their workflow, identify and fix issues early in the development process, maintain code consistency, and ensure high-quality code standards.
 
@@ -983,8 +983,8 @@ type Status = 'active' | 'inactive';
 
 > _Process_: Git hooks are stored in the `.git/hooks` directory of a Git repository and are triggered by specific Git events. Some commonly used Git hooks for adding rules before committing code include:
 >
-> 1.  **pre-commit**: This hook is executed immediately before a commit is made. It can be used to enforce code formatting rules, run linters, or execute pre-commit tests to ensure that committed code meets quality standards before it is saved in the repository.
-> 2.  **pre-push**: This hook is triggered before remote references are updated during a push operation. It can be used to run additional tests, check for code conflicts, or perform any other actions to verify the integrity and quality of the pushed changes before they are sent to the remote repository.
+> 1. **pre-commit**: This hook is executed immediately before a commit is made. It can be used to enforce code formatting rules, run linters, or execute pre-commit tests to ensure that committed code meets quality standards before it is saved in the repository.
+> 2. **pre-push**: This hook is triggered before remote references are updated during a push operation. It can be used to run additional tests, check for code conflicts, or perform any other actions to verify the integrity and quality of the pushed changes before they are sent to the remote repository.
 
 > _Example usage of pre-commit hook_:
 

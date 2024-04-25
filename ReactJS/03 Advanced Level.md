@@ -1,6 +1,6 @@
-# Advanced Level:
+# [Advanced Level](/ReactJS/README.MD#advanced-level)
 
-#### Advanced 1> Discuss the differences between React class components and functional components with hooks.
+#### Advanced 1> Discuss the differences between React class components and functional components with hooks
 
 > _Purpose_: React class components are traditional components in React that extend the Component class, while functional components with hooks are a newer approach that allows developers to use state and other React features without writing a class.
 
@@ -20,7 +20,7 @@
 
 > _Conclusion_: Effective state management is crucial for building robust React applications, and choosing the right approach depends on factors like application size, complexity, and performance requirements.
 
-#### Advanced 3> Explain the concept of Redux middleware and provide examples of popular middleware.
+#### Advanced 3> Explain the concept of Redux middleware and provide examples of popular middleware
 
 > _Purpose_: Redux middleware intercepts dispatched actions before they reach the reducer, allowing developers to add extra functionality such as logging, asynchronous API calls, or routing.
 
@@ -40,7 +40,7 @@
 
 > _Conclusion_: Choosing the right approach for handling asynchronous actions depends on factors like project requirements, complexity, and team familiarity with different middleware solutions.
 
-#### Advanced 5> Describe the purpose of React Suspense and how it can be used to improve user experience.
+#### Advanced 5> Describe the purpose of React Suspense and how it can be used to improve user experience
 
 > _Purpose_: React Suspense is a feature that enables components to "suspend" rendering while waiting for asynchronous data to resolve, improving perceived performance and user experience.
 
@@ -70,7 +70,7 @@
 
 > _Conclusion_: Security is a critical aspect of React application development, and proactive measures are essential for mitigating vulnerabilities and ensuring data protection and privacy.
 
-#### Advanced 8> Discuss the benefits and drawbacks of server-side rendering (SSR) in React.
+#### Advanced 8> Discuss the benefits and drawbacks of server-side rendering (SSR) in React
 
 > _Purpose_: Server-side rendering (SSR) in React involves rendering React components on the server and sending HTML to the client, offering benefits like improved SEO, faster initial page loads, and better performance on low-powered devices.
 
@@ -90,7 +90,7 @@
 
 > _Conclusion_: Integrating React with other technologies enhances its capabilities and improves development workflows, but requires careful consideration of compatibility, dependencies, and learning curves.
 
-#### Advanced 10> Describe the role of Webpack in a React project.
+#### Advanced 10> Describe the role of Webpack in a React project
 
 > _Purpose_: Webpack is a module bundler that processes JavaScript, CSS, and other assets in a React project, optimizing performance, and enabling features like code splitting, hot module replacement, and asset optimization.
 
@@ -110,7 +110,7 @@
 
 > _Conclusion_: Effective form handling in React requires a combination of validation techniques, state management, and user interface design considerations to meet application requirements and user expectations.
 
-#### Advanced 12> Discuss strategies for optimizing bundle size in React applications.
+#### Advanced 12> Discuss strategies for optimizing bundle size in React applications
 
 > _Purpose_: Optimizing bundle size in React applications involves reducing the amount of JavaScript and other assets sent to the client, improving loading times, and enhancing performance.
 
@@ -120,7 +120,7 @@
 
 > _Conclusion_: Bundle size optimization is a critical aspect of React application development, requiring careful planning, analysis, and implementation to balance performance improvements with development efficiency and maintainability.
 
-#### Advanced 13> Explain the concept of higher-order components (HOCs) and their alternatives.
+#### Advanced 13> Explain the concept of higher-order components (HOCs) and their alternatives
 
 > _Purpose_: Higher-order components (HOCs) are functions that accept a component and return a new component with enhanced functionality, enabling code reuse, logic abstraction, and composition in React applications.
 
@@ -150,7 +150,7 @@
 
 > _Conclusion_: Styled components and other CSS-in-JS solutions provide a modern approach to styling in React applications, offering advantages in terms of developer experience, performance, and component architecture.
 
-#### Advanced 16. Discuss the role of Redux selectors in managing the derived state.
+#### Advanced 16. Discuss the role of Redux selectors in managing the derived state
 
 > _Purpose_: Redux selectors are functions that compute derived data from the Redux store state, enabling efficient data access and transformation, memoization, and abstraction of state shape details.
 
@@ -170,7 +170,7 @@
 
 > _Conclusion_: Server-side rendering with React and Node.js offers benefits in terms of performance, SEO, and user experience, but requires careful setup and considerations for server-side rendering lifecycle and data fetching.
 
-#### Advanced 18> Explain the concept of error boundaries in React and how they help in error handling.
+#### Advanced 18> Explain the concept of error boundaries in React and how they help in error handling
 
 > _Purpose_: Error boundaries in React are components that catch JavaScript errors in their child component tree during rendering, preventing the entire UI from crashing and enabling graceful error handling.
 
@@ -180,7 +180,7 @@
 
 > _Conclusion_: Error boundaries are an essential tool for error handling in React applications, providing a mechanism for recovering from unexpected errors and maintaining application stability and reliability.
 
-#### Advanced 19> Discuss the pros and cons of using functional components over class components.
+#### Advanced 19> Discuss the pros and cons of using functional components over class components
 
 > _Purpose_: Choosing between functional components and class components in React involves considering factors like syntax, performance, lifecycle methods, and state management.
 

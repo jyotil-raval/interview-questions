@@ -1,4 +1,4 @@
-# Easy Level:
+# [Easy Level](/ReactJS/README.MD#easy-level)
 
 ## 1> What is React JS, and why is it used in web development?
 
@@ -20,7 +20,7 @@ const MyComponent = () => {
 
 > _Conclusion_: React's virtual DOM efficiently updates only the necessary parts of the UI, resulting in faster rendering and a better user experience.
 
-## 2> Explain the concept of JSX in React.
+## 2> Explain the concept of JSX in React
 
 > _Purpose_: JSX is a syntax extension for JavaScript used with React to describe what the UI should look like.
 
@@ -70,7 +70,7 @@ class MyClassComponent extends Component {
 
 > _Conclusion_: React components promote code reusability, modularity, and maintainability, making it easier to build and scale complex user interfaces.
 
-## 4> What is the state of React? How is it different from props? Explain with an example of state.
+## 4> What is the state of React? How is it different from props? Explain with an example of state
 
 > _Purpose_: The state in React represents the data that a component manages internally, which can change over time.
 
@@ -148,7 +148,7 @@ class MyComponent extends Component {
 
 > _Conclusion_: The virtual DOM abstraction simplifies the process of building dynamic user interfaces in React, optimizing performance and enhancing the user experience.
 
-## 7> Explain the role of setState() in React.
+## 7> Explain the role of setState() in React
 
 > _Purpose_: The setState() method in React is used to update the state of a component and trigger a re-render.
 
@@ -297,7 +297,7 @@ const MyComponent = () => {
 
 > _Conclusion_: useEffect() enables functional components to incorporate side effects into their logic, improving code organization and encapsulation while maintaining a clear and declarative syntax.
 
-## 14> Explain the difference between class components and functional components in React.
+## 14> Explain the difference between class components and functional components in React
 
 > _Purpose_: Class components and functional components are two types of components in React used for building user interfaces.
 
@@ -382,7 +382,7 @@ export default MyComponent;
 
 > _Conclusion_: React provides flexibility in styling components, allowing developers to choose the approach that best fits their project requirements and workflow.
 
-## 18> Explain the concept of React Fragments.
+## 18> Explain the concept of React Fragments
 
 > _Purpose_: React Fragments provide a way to group multiple JSX elements without introducing additional DOM nodes.
 
