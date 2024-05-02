@@ -1,6 +1,6 @@
 # [List of Interview questions that provide insight into the candidate's understanding of JAVASCRIPT concepts, best practices, and real-world application scenarios for experienced professionals](/README.MD)
 
-## Easy Level
+## [Easy Level](/JavaScript/01%20Easy%20Level.md)
 
 1. What is JavaScript?
 2. Explain the difference between == and === operators.
