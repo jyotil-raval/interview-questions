@@ -742,21 +742,21 @@ class ErrorBoundary extends React.Component {
 
 ## 19> Discuss the pros and cons of using functional components over class components
 
-> _**Pros**_:
->
-> - **Simplicity and readability**: Functional components are often simpler and more concise than class components, as they don't require a class definition with constructors, lifecycle methods, and bindings. This leads to cleaner and more readable code, making it easier for developers to understand and maintain.
-> - **Performance**: Functional components can be more performant than class components, especially with the introduction of React Hooks. Hooks allow functional components to manage state and side effects without the overhead of class instance creation and lifecycle methods. This can lead to improved rendering performance and reduced memory usage.
-> - **Functional programming benefits**: Functional components promote functional programming principles, such as immutability and pure functions. They encourage the use of pure functions and functional programming patterns, which can lead to better code organization, testability, and maintainability.
-> - **Hooks**: Functional components can leverage React Hooks, which provide a more flexible and composable way to manage state, side effects, and other React features. Hooks enable functional components to encapsulate complex logic and share reusable behavior across components, leading to more modular and reusable code.
-> - **Easier testing**: Functional components are easier to test compared to class components, as they are purely functional and don't have internal state or lifecycle methods. This simplifies unit testing and makes it easier to write test cases for functional components using libraries like Jest or React Testing Library.
+| Aspect                  | Functional Components                                          | Class Components                                                                      |
+| ----------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Pros**                |                                                                |                                                                                       |
+| Syntax                  | Shorter and more concise syntax with arrow functions           | Longer syntax with explicit class declaration and methods                             |
+| Readability             | Typically easier to read and understand                        | May require more mental overhead to grasp class-based syntax                          |
+| Performance             | Generally better performance due to lightweight nature         | May have slightly higher overhead due to instantiation of class objects               |
+| Lifecycle Hooks         | No lifecycle hooks or state management directly available      | Access to lifecycle hooks and built-in state management (useState, useEffect)         |
+| Easier Testing          | Easier to test with functional purity and lack of side effects | May require mocking of lifecycle methods and instance variables for testing           |
+| **Cons**                |                                                                |                                                                                       |
+| Lack of Lifecycle Hooks | No direct access to lifecycle methods                          | Requires using higher-order components or external libraries for lifecycle management |
+| No Class Properties     | No direct support for class properties or instance variables   | Requires using `this` keyword and constructor for managing instance state             |
+| No Refs                 | Limited support for `ref` attribute                            | Full support for `ref` attribute and accessing DOM nodes                              |
+| No HOCs                 | No support for Higher-Order Components (HOCs)                  | Supports Higher-Order Components for code reuse and abstraction                       |
 
-> _**Cons**_:
->
-> - **No lifecycle methods (prior to Hooks)**: Before the introduction of Hooks, functional components lacked lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount. This made it challenging to implement certain features like side effects, data fetching, and subscriptions in functional components.
-> - **State management complexity (prior to Hooks)**: Before Hooks, functional components didn't have built-in state management capabilities, making it necessary to rely on external state management libraries like Redux or MobX for complex state management scenarios. This added complexity and boilerplate code to functional components compared to class components.
-> - **Limited backward compatibility**: Functional components with Hooks are not fully backward compatible with older versions of React or environments that don't support Hooks. This can be a limitation for projects that need to support older browsers or React versions, requiring additional polyfills or workarounds.
-> - **Learning curve for Hooks**: While Hooks offer many benefits, they also introduce a new paradigm and learning curve for developers who are accustomed to class components and lifecycle methods. It may take time for developers to become familiar with Hooks and understand how to use them effectively in functional components.
-> - **Integration with third-party libraries**: Some third-party libraries and tools may not fully support functional components and Hooks, especially if they rely heavily on class components or legacy React features. This could limit the compatibility and ecosystem support for projects that rely on functional components.
+> _**Conclusion**_: The choice between functional components and class components depends on factors such as project requirements, team preferences, and familiarity with React ecosystem. Functional components offer cleaner syntax, better performance, and ease of testing, but may lack direct access to lifecycle hooks and class-based features like instance variables and refs. Class components, on the other hand, provide access to lifecycle hooks, class properties, and refs, but may be more verbose and have slightly higher overhead. Developers should weigh these factors when deciding which component type to use in their React applications.
 
 ## 20> How do you handle performance optimization in React applications?
 
