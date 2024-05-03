@@ -13,7 +13,7 @@
 9. Explain the concept of hoisting in JavaScript.
 10. What is the significance of the NaN value in JavaScript?
 
-## Intermediate Level
+## [Intermediate Level](/JavaScript/02%20Intermediate%20Level.md)
 
 1. What are closures in JavaScript and how are they used?
 2. Explain the concept of prototypal inheritance in JavaScript.
@@ -26,7 +26,7 @@
 9. What is the difference between null and undefined in JavaScript?
 10. How do you handle asynchronous code in JavaScript?
 
-## Advanced Level
+## [Advanced Level](/JavaScript/03%20Advanced%20Level.md)
 
 1. What are generators in JavaScript and how are they used?
 2. Explain the concept of currying in JavaScript.
@@ -39,7 +39,7 @@
 9. How do you implement inheritance in JavaScript?
 10. Discuss the concept of "truthy" and "falsy" values in JavaScript.
 
-## Expert Level
+## [Expert Level](/JavaScript/04%20Expert%20Level.md)
 
 1. How does JavaScript handle memory management?
 2. Discuss the pros and cons of using ES6 classes versus constructor functions.
