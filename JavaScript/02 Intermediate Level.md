@@ -1,4 +1,4 @@
-# [Intermediate Level](/ReactJS/README.MD#intermediate-level)
+# [Intermediate Level](/JavaScript/README.MD#intermediate-level)
 
 ## 1> What are closures in JavaScript and how are they used?
 

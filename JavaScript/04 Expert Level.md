@@ -1,4 +1,4 @@
-# [Expert Level](/ReactJS/README.MD#expert-level)
+# [Expert Level](/JavaScript/README.MD#expert-level)
 
 ## 1. How does JavaScript handle memory management?
 

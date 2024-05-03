@@ -1,4 +1,4 @@
-# [Easy Level](/JavaScript/README.MD)
+# [Easy Level](/JavaScript/README.MD#easy-level)
 
 ## 1> What is JavaScript?
 
