@@ -1,108 +1,157 @@
-# [List of Interview questions that provide insight into the candidate's understanding of React JS concepts, best practices, and real-world application scenarios for experienced professionals](/README.MD)
+<!-- Generated: 2026-03-12 -->
 
-## [Easy Level](/ReactJS/01%20Easy%20Level.md)
+# React.js — Interview Q&A
 
-1. What is React JS, and why is it used in web development?
-2. Explain the concept of JSX in React.
-3. How do you create a React component?
-4. What is the state of React? How is it different from props? Explain with an example of state.
-5. How do you handle events in React?
-6. What is the significance of the virtual DOM in React?
-7. Explain the role of setState() in React.
-8. How do you pass data from parent to child components in React?
-9. What are keys in React and why are they important?
-10. What is the purpose of the render() method in React components?
-11. What are React Hooks? Can you name a few built-in hooks?
-12. How do you conditionally render components in React?
-13. What is the purpose of the useEffect() hook in React?
-14. Explain the difference between class components and functional components in React.
-15. How do you handle forms in React?
-16. What is prop drilling and how can it be avoided?
-17. How do you style components in React?
-18. Explain the concept of React Fragments.
-19. What is the role of key prop in lists in React?
-20. Can you explain the component lifecycle methods in React?
-21. What are tuples in TypeScript with examples?
+**Level:** Tech Lead / Architect
+**Target Role:** Assistant Architect → Tech Lead / Tech Manager
+**Questions per Level:** 5 | **Total Questions:** 30
 
-## [Intermediate Level](/ReactJS/02%20Intermediate%20Level.md)
+---
 
-1. Describe the differences between useState() and useReducer() hooks.
-2. How do you optimize performance in React applications?
-3. Explain the concept of React Router and how it is used for routing in React applications.
-4. What are higher-order components (HOCs) in React? Provide an example.
-5. How do you manage global state in React without using Redux?
-6. What is the significance of the shouldComponentUpdate() method in React?
-7. How do you handle authentication and authorization in React applications?
-8. Explain the concept of lazy loading in React and its benefits.
-9. What are controlled and uncontrolled components in React?
-10. How do you handle side effects in React using hooks?
-11. Describe the purpose of error boundaries in React.
-12. What are React Portals and why are they used?
-13. How do you perform server-side rendering (SSR) with React?
-14. Explain the concept of code splitting in React.
-15. How do you handle routing with parameters in React Router?
-16. What is the role of context API in React? Provide a scenario where you would use it.
-17. How do you test React components?
-18. Explain the concept of memoization in React and its benefits.
-19. What are React fragments and when would you use them?
-20. How do you handle AJAX requests in React applications?
-21. Explain JWT token
-22. Explain Webpack and its configuration
-23. How many packages you have used for unit testing, which are those, and why?
-24. Have you worked on accessibility in HTML, have you used the aria, tell some aria names that you have used?
-25. What is the difference between fetch and Axios?
-26. Have you ever done any project setup/configuration from scratch, what things that needs to keep in mind when we setting up the project?
-27. What is CORS?
-28. Explain CSRF
-29. What is the difference between types and interface?
-30. What is a preprocessor, have you used any preprocessor, give some CSS preprocessor names. What is the benefit of it?
-31. What development tools have you used to enhance the quality of your code?
-32. Name the hooks which are used to add some rules before committing the code?
+## [L1 — Conceptual Foundations](./L1.md)
 
-## [Advanced Level](/ReactJS/03%20Advanced%20Level.md)
+### [Core Philosophy › Virtual DOM](./L1.md#core-philosophy--virtual-dom)
 
-1. Discuss the differences between React class components and functional components with hooks.
-2. How do you manage application state in large React applications?
-3. Explain the concept of Redux middleware and provide examples of popular middleware.
-4. How do you handle asynchronous actions in Redux?
-5. Describe the purpose of React Suspense and how it can be used to improve user experience.
-6. What are the best practices for organizing code in a React project?
-7. How do you handle security vulnerabilities in React applications?
-8. Discuss the benefits and drawbacks of server-side rendering (SSR) in React.
-9. How do you integrate React with other libraries or frameworks, such as TypeScript or GraphQL?
-10. Describe the role of Webpack in a React project.
-11. How do you handle forms with complex validation requirements in React?
-12. Discuss strategies for optimizing bundle size in React applications.
-13. Explain the concept of higher-order components (HOCs) and their alternatives.
-14. How do you handle internationalization (i18n) in React applications?
-15. What are the advantages of using CSS-in-JS libraries like styled components in React?
-16. Discuss the role of Redux selectors in managing the derived state.
-17. How do you implement server-side rendering (SSR) with React and Node.js?
-18. Explain the concept of error boundaries in React and how they help in error handling.
-19. Discuss the pros and cons of using functional components over class components.
-20. How do you handle performance optimization in React applications?
-21. How many types of attacks are there, have you done anything to prevent those things in web applications?
-22. What are the performance tools you have used and how you have optimized the performances for React Applications?
+- **Question:** What is the Virtual DOM, and why did React introduce it instead of operating directly on the real DOM?
 
-## [Expert Level](/ReactJS/04%20Expert%20Level.md)
+### [Core Philosophy › Component Model](./L1.md#core-philosophy--component-model)
 
-1. Explain the differences between React Fiber and the old reconciliation algorithm.
-2. How do you optimize rendering performance in React applications?
-3. Discuss the principles of functional programming in the context of React.
-4. How would you implement server-side rendering (SSR) with React and GraphQL?
-5. Describe the process of building a custom React renderer.
-6. Discuss the role of memoization and caching in React performance optimization.
-7. How do you ensure accessibility in React applications?
-8. Describe the process of building a high-performance data visualization component in React.
-9. Discuss the differences between React context and Redux for state management.
-10. How would you implement a plugin system in a React application?
-11. Explain the concept of time slicing in React and how it improves performance.
-12. Discuss strategies for optimizing the initial load time of a React application.
-13. How do you handle memory leaks in long-running React applications?
-14. Describe the process of building a scalable and maintainable design system with React.
-15. Discuss the limitations of the virtual DOM and potential alternatives.
-16. How do you ensure code quality and maintainability in a large React codebase?
-17. Describe the process of migrating a legacy React application to the latest version of React.
-18. How do you implement server-side rendering (SSR) with React and a headless CMS?
-19. Discuss the trade-offs between client-side and server-side rendering in React applications.
-20. How would you architect a React application for scalability and performance?
+- **Question:** React is described as component-based. What does that actually mean architecturally, and what problem does it solve that pre-React jQuery-era development had?
+
+### [Core Philosophy › Unidirectional Data Flow](./L1.md#core-philosophy--unidirectional-data-flow)
+
+- **Question:** What is unidirectional data flow in React, and why is it architecturally significant for large-scale applications?
+
+### [Core Philosophy › Reconciliation](./L1.md#core-philosophy--reconciliation)
+
+- **Question:** Explain React's reconciliation algorithm. What heuristics does it use, and what are the implications of those heuristics for developers?
+
+### [Core Philosophy › Declarative vs Imperative](./L1.md#core-philosophy--declarative-vs-imperative)
+
+- **Question:** React is declarative. Explain what that means, the mental model it produces, and where imperative code still legitimately appears in a React codebase.
+
+---
+
+## [L2 — Core APIs and Fundamental Features](./L2.md)
+
+### [Hooks › useState](./L2.md#hooks--usestate)
+
+- **Question:** How does `useState` work under the hood in terms of call order and state persistence, and what are the common bugs that emerge from misunderstanding it?
+
+### [Hooks › useEffect](./L2.md#hooks--useeffect)
+
+- **Question:** Explain `useEffect`'s execution model, the dependency array contract, and the three categories of bugs it produces when misused.
+
+### [Component Lifecycle › Class vs Hooks Mental Model](./L2.md#component-lifecycle--class-vs-hooks-mental-model)
+
+- **Question:** Map the class component lifecycle methods to their Hook equivalents. Where do the mental models diverge, and why does that divergence matter?
+
+### [Props vs State › Ownership and Mutability](./L2.md#props-vs-state--ownership-and-mutability)
+
+- **Question:** Define props and state precisely. What determines which one a piece of data should be, and what are the signs a developer has chosen wrong?
+
+### [Keys in Lists › Identity and Reconciliation](./L2.md#keys-in-lists--identity-and-reconciliation)
+
+- **Question:** Why is `key` a critical architectural concern in list rendering, and what failure modes emerge from incorrect key usage?
+
+---
+
+## [L3 — Common Patterns and Real-World Usage](./L3.md)
+
+### [State Management › Context API](./L3.md#state-management--context-api)
+
+- **Question:** What is the Context API, when should you use it, and what are the performance trade-offs that make it the wrong choice for high-frequency state?
+
+### [Performance › Memoization (React.memo, useMemo, useCallback)](./L3.md#performance--memoization-reactmemo-usememo-usecallback)
+
+- **Question:** Explain the three memoization primitives in React — `React.memo`, `useMemo`, and `useCallback` — their exact use cases, and the anti-pattern of over-memoizing.
+
+### [Patterns › Controlled vs Uncontrolled Components](./L3.md#patterns--controlled-vs-uncontrolled-components)
+
+- **Question:** Contrast controlled and uncontrolled components in React. When does each pattern fit, and what breaks when you mix them?
+
+### [Patterns › Higher-Order Components (HOCs)](./L3.md#patterns--higher-order-components-hocs)
+
+- **Question:** What is a Higher-Order Component, what problem does it solve, and why has the React community largely migrated away from it toward Hooks?
+
+### [Patterns › Render Props](./L3.md#patterns--render-props)
+
+- **Question:** Explain the render props pattern, its use case, and how it compares to HOCs and Hooks for logic reuse.
+
+---
+
+## [L4 — Advanced Patterns, Optimisation, Edge Cases](./L4.md)
+
+### [Hooks › useReducer](./L4.md#hooks--usereducer)
+
+- **Question:** When should you reach for `useReducer` instead of `useState`, and how does it change the state management mental model?
+
+### [Concurrent Features › Suspense](./L4.md#concurrent-features--suspense)
+
+- **Question:** What is React Suspense, how does it work mechanically, and what is its architectural significance for data fetching?
+
+### [Advanced Patterns › Error Boundaries](./L4.md#advanced-patterns--error-boundaries)
+
+- **Question:** What are Error Boundaries, how do you implement them, and what rendering errors do they NOT catch?
+
+### [Performance › Code Splitting and Lazy Loading](./L4.md#performance--code-splitting-and-lazy-loading)
+
+- **Question:** How does code splitting work in React, what is the loading cascade problem it creates, and how do you solve it without degrading UX?
+
+### [Advanced Patterns › Custom Hooks](./L4.md#advanced-patterns--custom-hooks)
+
+- **Question:** What makes a custom Hook architecturally significant beyond just being a shared function, and what are the rules that distinguish a valid custom Hook from an ordinary utility function?
+
+---
+
+## [L5 — Architecture and System Design](./L5.md)
+
+### [Architecture › Micro-Frontend Integration with React](./L5.md#architecture--micro-frontend-integration-with-react)
+
+- **Question:** Walk through how you would architect a React micro-frontend system using Module Federation. What are the hard problems you'd face at the seam between micro-frontend?
+
+### [Architecture › Design Systems in React](./L5.md#architecture--design-systems-in-react)
+
+- **Question:** How do you architect a React component library intended as a Design System for consumption by multiple product teams? What are the decisions that determine whether it succeeds or becomes abandoned?
+
+### [Architecture › State Architecture at Scale](./L5.md#architecture--state-architecture-at-scale)
+
+- **Question:** For a large React application with 50+ components, walk through how you decide where state lives and what signals indicate the current state architecture is breaking down.
+
+### [Architecture › Server-Side Rendering with React](./L5.md#architecture--server-side-rendering-with-react)
+
+- **Question:** What problems does SSR solve in a React application, what does it cost, and how do hydration errors surface at runtime?
+
+### [Architecture › Performance at Scale (Virtualisation and Large Lists)](./L5.md#architecture--performance-at-scale-virtualisation-and-large-lists)
+
+- **Question:** How would you architect a React UI that needs to display and interact with a list of 10,000 items without degrading to an unusable render performance?
+
+---
+
+## [L6 — Expert Level: Cross-Cutting Concerns, Security, Hard Trade-offs](./L6.md)
+
+### [Expert › React Fiber Architecture](./L6.md#expert--react-fiber-architecture)
+
+- **Question:** Explain React Fiber's architecture. What fundamental limitation of the previous stack reconciler did it solve, and what capabilities did it unlock?
+
+### [Expert › Concurrent Mode and `useTransition`](./L6.md#expert--concurrent-mode-and-usetransition)
+
+- **Question:** What is Concurrent Mode in React 18, how does `useTransition` expose it to developers, and what failure modes does it introduce?
+
+### [Expert › Security (XSS in React)](./L6.md#expert--security-xss-in-react)
+
+- **Question:** How does React protect against XSS by default, where does that protection break down, and what patterns introduce XSS vulnerabilities in a React application?
+
+### [Expert › Accessibility (a11y) in React](./L6.md#expert--accessibility-a11y-in-react)
+
+- **Question:** What are the key accessibility requirements a React Tech Lead should enforce across a component library, and where do React's patterns create accessibility anti-patterns?
+
+### [Expert › Testing Strategy for React at Scale](./L6.md#expert--testing-strategy-for-react-at-scale)
+
+- **Question:** Design the testing pyramid for a large-scale React application. What do you test at each layer, and what are the trade-offs that determine the right balance for a production system?
+
+---
+
+_End of ReactJS_Interview_QA.md_
+_Total Questions: 30 | Levels: L1–L6 | 5 questions per level_
+_Calibrated for: Tech Lead / Architect | Apple · PayPal · IoT context woven throughout_
