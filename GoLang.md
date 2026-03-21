@@ -65,7 +65,11 @@
 - **Answer:**
   - Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson — primarily to solve Google's software engineering problems at scale: fast compilation, efficient concurrency, readable codebases maintained by large teams.
   - Core design philosophy: **simplicity over expressiveness**. Go deliberately excludes features common in other languages — no inheritance, no function overloading, no operator overloading, no exceptions, no implicit conversions, no generics until 1.18. Every exclusion is a deliberate trade-off to keep the language small, readable, and toolable.
-  - **Key trade-offs Go makes:** (1) Speed of compilation over runtime micro-optimisation — Go compiles to machine code fast enough to use as a scripting replacement. (2) Explicit error handling over exceptions — errors are values, not control flow. (3) Composition over inheritance — structs + interfaces, no class hierarchy. (4) Goroutines over OS threads — cheap concurrency without thread management overhead.
+  - **Key trade-offs Go makes:**
+    (1) Speed of compilation over runtime micro-optimisation — Go compiles to machine code fast enough to use as a scripting replacement.
+    (2) Explicit error handling over exceptions — errors are values, not control flow.
+    (3) Composition over inheritance — structs + interfaces, no class hierarchy.
+    (4) Goroutines over OS threads — cheap concurrency without thread management overhead.
   - Go produces a single statically linked binary — no runtime dependency, no VM, no interpreter. Deploy anywhere the target OS/arch can run a binary.
 - **Example:**
 
@@ -287,7 +291,11 @@ s == nil               // FALSE — the interface has a non-nil type descriptor
 - **Answer:**
   - A pointer holds the memory address of a value. `&x` gets a pointer to `x`. `*p` dereferences the pointer to get the value. Go has no pointer arithmetic — you cannot do `p + 1` to advance to the next element (unlike C).
   - **Value receiver** (`func (t MyType) Method()`): Method receives a copy of the value. Mutations inside the method do not affect the original. Safe for concurrent use — no shared state.
-  - **Pointer receiver** (`func (t *MyType) Method()`): Method receives a pointer to the original. Mutations affect the original. Required when: (1) The method must mutate the receiver. (2) The receiver is large (avoid copying). (3) Consistency — if any method needs a pointer receiver, use pointer receivers for all methods on that type.
+  - **Pointer receiver** (`func (t *MyType) Method()`): Method receives a pointer to the original. Mutations affect the original.
+    Required when:
+    (1) The method must mutate the receiver.
+    (2) The receiver is large (avoid copying).
+    (3) Consistency — if any method needs a pointer receiver, use pointer receivers for all methods on that type.
   - **Escape analysis:** The Go compiler determines whether a variable's memory can live on the stack (local, fast, GC-free) or must be allocated on the heap (longer lifetime, GC-managed). A variable "escapes to the heap" when: its address is stored somewhere that outlives the function, it's returned as an interface, or it's too large for the stack. Use `go build -gcflags="-m"` to see escape analysis decisions.
 - **Example:**
 
