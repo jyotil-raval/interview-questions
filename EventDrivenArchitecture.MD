@@ -15,8 +15,8 @@ This file covers **architectural patterns** — the layer above broker mechanics
 
 Broker mechanics (Kafka, RabbitMQ, SQS/SNS) are in:
 
-- `Messaging_Interview_QA.md` — Kafka internals, RabbitMQ AMQP, delivery semantics
-- `AWS_Interview_QA.md` — SQS, SNS, EventBridge, fan-out, DLQ
+- [Messaging](./Messaging.md) — Kafka internals, RabbitMQ AMQP, delivery semantics
+- [AWS](./AWS.md) — SQS, SNS, EventBridge, fan-out, DLQ
 
 This file covers what those files don't:
 
