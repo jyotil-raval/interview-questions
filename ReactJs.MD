@@ -442,7 +442,10 @@ class ProductsErrorBoundary extends React.Component {
 - **Answer:**
   - `React.lazy(() => import('./Component'))` creates a lazy component whose bundle chunk is only fetched when the component is first rendered. Bundlers (Webpack, Vite) split the import into a separate chunk at build time.
   - The lazy component must be wrapped in `<Suspense fallback={...}>` — Suspense catches the Promise thrown by the lazy component while loading and renders the fallback.
-  - Architectural split points: (1) Route-level — each route is a separate chunk (most impactful — eliminates upfront bundle cost for unvisited pages). (2) Modal/dialog — loaded on first open. (3) Heavy third-party libraries (charting, rich text editors) — isolated to their usage.
+  - Architectural split points:
+    (1) Route-level — each route is a separate chunk (most impactful — eliminates upfront bundle cost for unvisited pages).
+    (2) Modal/dialog — loaded on first open.
+    (3) Heavy third-party libraries (charting, rich text editors) — isolated to their usage.
   - React 19 Partial Pre-rendering (PPR) extends this: you can statically shell a page with a Suspense boundary and stream the dynamic content — combining code splitting with streaming SSR.
 - **Example:**
 
@@ -775,7 +778,10 @@ function Dashboard() {
 - **Question:** How do you architect a React-based micro-frontend system using Module Federation, and what are the critical failure modes at scale?
 - **Answer:**
   - Module Federation (Webpack 5) allows independently deployed React apps to expose and consume modules at runtime. Each MFE (micro-frontend) is a separate build with its own deployment lifecycle — teams ship independently.
-  - Critical architectural decisions: (1) Shared dependencies — React and ReactDOM must be shared at `singleton: true` to avoid multiple React instances on the page (breaks hooks, causes "invalid hook call" errors). (2) Contract definition — exposed modules must have stable TypeScript interfaces; breaking changes are a deployment risk. (3) Shell application — the container that orchestrates MFEs, handles routing, and manages the shared authentication context.
+  - Critical architectural decisions:
+    (1) Shared dependencies — React and ReactDOM must be shared at `singleton: true` to avoid multiple React instances on the page (breaks hooks, causes "invalid hook call" errors).
+    (2) Contract definition — exposed modules must have stable TypeScript interfaces; breaking changes are a deployment risk.
+    (3) Shell application — the container that orchestrates MFEs, handles routing, and manages the shared authentication context.
   - React 17's event delegation change to root container (vs document) was specifically designed to support multiple React versions on the same page — enabling MFEs with different React versions without event conflicts.
   - Failure modes: shared dependency version drift, stale remote entry caches (CDN caching of remoteEntry.js), bootstrap initialization race conditions, and cross-MFE routing conflicts.
 - **Example:**
@@ -814,7 +820,10 @@ new ModuleFederationPlugin({
 
 - **Question:** How do you architect a React component library that scales across multiple product teams without becoming a bottleneck?
 - **Answer:**
-  - A design system at scale has three layers: (1) Tokens layer — design variables (color, spacing, typography) as CSS custom properties or a structured JS object. Consumed by all layers. (2) Primitive components layer — unstyled, accessible building blocks (Button, Input, Modal). Maximum flexibility, minimal opinion. (3) Composite components layer — opinionated, token-styled compositions (SearchBar, DataTable). Higher opinion, lower flexibility.
+  - A design system at scale has three layers:
+    (1) Tokens layer — design variables (color, spacing, typography) as CSS custom properties or a structured JS object. Consumed by all layers.
+    (2) Primitive components layer — unstyled, accessible building blocks (Button, Input, Modal). Maximum flexibility, minimal opinion.
+    (3) Composite components layer — opinionated, token-styled compositions (SearchBar, DataTable). Higher opinion, lower flexibility.
   - Versioning strategy: semantic versioning is required. Breaking changes in primitives cascade to all consumers — a major version bump must come with a migration guide and a codemoding path.
   - Contribution model: open contribution with design review prevents bottleneck. But requires contract testing — every component has a defined API spec, and PRs that break the spec are rejected automatically.
   - Published with Storybook for visual testing, Chromatic for visual regression, and a peer-reviewed accessibility audit (`jest-axe` in unit tests).
@@ -850,7 +859,11 @@ interface ButtonProps {
 
 - **Question:** How do you decide between Redux, Zustand, Jotai, and React Context for state management in a large-scale React application?
 - **Answer:**
-  - State classification drives the decision: (1) Server state (async, remote) → React Query or SWR — not a state manager, a server cache. (2) Global client state (user session, theme, cart) → Zustand or Redux. (3) Component-local shared state (form, wizard steps) → Context + useReducer. (4) Atomic fine-grained state (per-cell table values) → Jotai or Recoil.
+  - State classification drives the decision:
+    (1) Server state (async, remote) → React Query or SWR — not a state manager, a server cache.
+    (2) Global client state (user session, theme, cart) → Zustand or Redux.
+    (3) Component-local shared state (form, wizard steps) → Context + useReducer.
+    (4) Atomic fine-grained state (per-cell table values) → Jotai or Recoil.
   - Redux use cases: large teams needing strict action traceability, time-travel debugging, Redux DevTools integration, or teams already invested in the Redux ecosystem. The boilerplate cost is justified by predictability at scale.
   - Zustand: minimal API, no boilerplate, no Provider required (module-level store), supports React 19 concurrent mode natively. Best for teams that need global state without Redux's ceremony.
   - Context + useReducer: correct for domain-scoped state that doesn't cross many component boundaries. Not suited for high-frequency updates — every context consumer re-renders on any value change.
@@ -1015,7 +1028,10 @@ const safeUrl = /^https?:\/\//.test(user.profileUrl) ? user.profileUrl : '#';
 - **Question:** How do you identify and resolve a React performance problem in a production application with 500k+ active users?
 - **Answer:**
   - Step 1 — Observe: use React DevTools Profiler to record a user interaction. Identify components with high render time (flame graph). Look for unnecessary renders (components that re-render without prop/state changes).
-  - Step 2 — Classify the problem type: (1) Too many renders — a parent re-renders and pulls an entire subtree with it. Fix: `React.memo`, split context, or move state down. (2) Expensive renders — a render itself is slow (complex calculation, large list). Fix: `useMemo`, virtualization (`react-window`), `useTransition`. (3) Large DOM — too many nodes. Fix: virtualize with `react-window` or `react-virtual`.
+  - Step 2 — Classify the problem type:
+    (1) Too many renders — a parent re-renders and pulls an entire subtree with it. Fix: `React.memo`, split context, or move state down.
+    (2) Expensive renders — a render itself is slow (complex calculation, large list). Fix: `useMemo`, virtualization (`react-window`), `useTransition`.
+    (3) Large DOM — too many nodes. Fix: virtualize with `react-window` or `react-virtual`.
   - Step 3 — Measure in production: `web-vitals` for LCP, FID, CLS. Custom performance marks with `performance.mark()` and `performance.measure()` around critical paths. Splunk/Datadog for aggregated RUM data.
   - Step 4 — Target the highest-leverage fix: bundle size reduction (code splitting) often has 10x more impact than component-level memoization. Always tackle bundle size, rendering architecture, and network before micro-optimizations.
 - **Example:**
